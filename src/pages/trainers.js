@@ -11,26 +11,24 @@ import pic10 from '../assets/images/pic10.jpg'
 const Landing = props => (
   <Layout>
     <Helmet>
-      <title>VitaSupport</title>
+      <title>Trainers | VitaSupport</title>
       <meta name="description" content="Landing Page" />
     </Helmet>
-
-    <BannerLanding />
 
     <div id="main">
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h2>Sed amet aliquam</h2>
+            <h2>Trainers</h2>
           </header>
           <p>
             Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-            magna sed nunc rhoncus condimentum sem. In efficitur ligula tate
-            urna. Maecenas massa vel lacinia pellentesque lorem ipsum dolor.
+            libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
+            Pellentesque condimentum sem. In efficitur ligula tate urna.
+            Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
             Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-            libero. Nullam et orci eu lorem consequat tincidunt vivamus et
-            sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula
-            tate urna.
+            libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et
+            feugiat tempus.
           </p>
         </div>
       </section>
@@ -42,7 +40,7 @@ const Landing = props => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Orci maecenas</h3>
+                <h3>Winfred</h3>
               </header>
               <p>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
