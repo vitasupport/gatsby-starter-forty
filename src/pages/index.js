@@ -6,9 +6,8 @@ import BannerLanding from '../components/BannerLanding'
 
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
 
-const Landing = props => (
+const HomeIndex = props => (
   <Layout>
     <Helmet>
       <title>VitaSupport</title>
@@ -21,7 +20,7 @@ const Landing = props => (
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h2>Sed amet aliquam</h2>
+            <h2>Intro</h2>
           </header>
           <p>
             Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
@@ -42,7 +41,7 @@ const Landing = props => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Orci maecenas</h3>
+                <h3>Personal training</h3>
               </header>
               <p>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
@@ -68,7 +67,7 @@ const Landing = props => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Rhoncus magna</h3>
+                <h3>Hardlopen</h3>
               </header>
               <p>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
@@ -92,4 +91,4 @@ const Landing = props => (
   </Layout>
 )
 
-export default Landing
+export default HomeIndex

@@ -4,11 +4,11 @@ import Layout from '../components/Layout'
 
 import pic11 from '../assets/images/pic11.jpg'
 
-const Generic = props => (
+const PersonalTrainingPage = props => (
   <Layout>
     <Helmet>
       <title>Personal Training | VitaSupport</title>
-      <meta name="description" content="Generic Page" />
+      <meta name="description" content="Personal Training Page" />
     </Helmet>
 
     <div id="main" className="alt">
@@ -57,4 +57,4 @@ const Generic = props => (
   </Layout>
 )
 
-export default Generic
+export default PersonalTrainingPage

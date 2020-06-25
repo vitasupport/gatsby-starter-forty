@@ -21,9 +21,10 @@ const Footer = props => (
         </li>
       </ul>
       <ul className="copyright">
-        <li>&copy; Untitled</li>
+        <li>Disclaimer</li>
+        <li>Algemene voorwaarden</li>
         <li>
-          Design: <a href="https://html5up.net">HTML5 UP</a>
+          Copyright &copy; {new Date().getFullYear()}. All rights reserved.
         </li>
       </ul>
     </div>

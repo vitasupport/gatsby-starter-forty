@@ -2,17 +2,15 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import BannerLanding from '../components/BannerLanding'
 
 import pic08 from '../assets/images/pic08.jpg'
 import pic09 from '../assets/images/pic09.jpg'
-import pic10 from '../assets/images/pic10.jpg'
 
-const Landing = props => (
+const TrainersPage = props => (
   <Layout>
     <Helmet>
       <title>Trainers | VitaSupport</title>
-      <meta name="description" content="Landing Page" />
+      <meta name="description" content="Trainers Page" />
     </Helmet>
 
     <div id="main">
@@ -66,7 +64,7 @@ const Landing = props => (
           <div className="content">
             <div className="inner">
               <header className="major">
-                <h3>Rhoncus magna</h3>
+                <h3>Iemand Anders</h3>
               </header>
               <p>
                 Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
@@ -90,4 +88,4 @@ const Landing = props => (
   </Layout>
 )
 
-export default Landing
+export default TrainersPage
