@@ -32,7 +32,7 @@ const TrainersPage = props => (
       </section>
       <section id="two" className="spotlights">
         <section>
-          <Link to="/personal-training" className="image">
+          <Link to="/trainers/winfred-van-groningen" className="image">
             <img src={pic08} alt="" />
           </Link>
           <div className="content">
@@ -49,7 +49,7 @@ const TrainersPage = props => (
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/personal-training" className="button">
+                  <Link to="/trainers/winfred-van-groningen" className="button">
                     Learn more
                   </Link>
                 </li>

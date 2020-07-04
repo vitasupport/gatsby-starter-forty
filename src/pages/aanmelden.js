@@ -1,16 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
-import Contact from '../components/Contact'
 
-const ContactPage = props => (
+const AanmeldenPage = props => (
   <Layout>
-    <Helmet title="Wordt fitter, sterker en vermijd blessures, meld je aan | VitaSupport"></Helmet>
+    <Helmet title="Meld je nu aan bij VitaSupport - personal training en hardloop training"></Helmet>
     <div id="main">
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h1>Contact</h1>
+            <h1>Aanmelden</h1>
           </header>
           Inhoud?
         </div>
@@ -19,4 +18,4 @@ const ContactPage = props => (
   </Layout>
 )
 
-export default ContactPage
+export default AanmeldenPage

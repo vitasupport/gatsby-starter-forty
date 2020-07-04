@@ -1,71 +1,117 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
+import { Link } from 'gatsby'
 import Layout from '../components/Layout'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
+import pic21 from '../assets/images/pic21.jpg'
 
 class HardlopenPage extends React.Component {
   render() {
     return (
       <Layout>
         <Helmet
-          title="Hardlopen | VitaSupport"
+          title="Hardlopen met hardlooptrainer in Alkmaar | VitaSupport"
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            {
+              name: 'description',
+              content:
+                'Leer hardlopen onder begeleiding, met looptechniek en fysieke training in Alkmaar',
+            },
+            {
+              name: 'keywords',
+              content: 'hardlopen, hardlooptraing, blessurevrij',
+            },
           ]}
         ></Helmet>
 
         <div id="main">
-          <section id="two">
+          <section id="one">
             <div className="inner">
               <header className="major">
-                <h2>Hardlopen</h2>
+                <h1>Hardloop training Alkmaar</h1>
+                <h2>onder begeleiding vertantwoord leren hardlopen</h2>
               </header>
               <p>
-                Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-                libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-                Pellentesque condimentum sem. In efficitur ligula tate urna.
-                Maecenas laoreet massa vel lacinia pellentesque lorem ipsum
-                dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et
-                sagittis libero. Mauris aliquet magna magna sed nunc rhoncus
-                amet pharetra et feugiat tempus.
+                Hardlopen is misschien wel de meest beoefende sport in
+                Nederland. Overal en altijd zie je mensen alleen of in kleine
+                groepjes hardlopen. Maar is hardlopen wel zo gezond? Niet, als
+                je looptechniek niet in orde is. Dan liggen fysiek ongemak en
+                blessuregevoeligheid op de loer.
               </p>
             </div>
           </section>
-          <section id="one" className="tiles">
-            <article style={{ backgroundImage: `url(${pic01})` }}>
-              <header className="major">
-                <h3>Aliquam</h3>
-                <p>Ipsum dolor sit amet</p>
-              </header>
-              <Link to="/landing" className="link primary"></Link>
-            </article>
-            <article style={{ backgroundImage: `url(${pic02})` }}>
-              <header className="major">
-                <h3>Tempus</h3>
-                <p>feugiat amet tempus</p>
-              </header>
-              <Link to="/landing" className="link primary"></Link>
-            </article>
-            <article style={{ backgroundImage: `url(${pic03})` }}>
-              <header className="major">
-                <h3>Magna</h3>
-                <p>Lorem etiam nullam</p>
-              </header>
-              <Link to="/landing" className="link primary"></Link>
-            </article>
-            <article style={{ backgroundImage: `url(${pic04})` }}>
-              <header className="major">
-                <h3>Ipsum</h3>
-                <p>Nisl sed aliquam</p>
-              </header>
-              <Link to="/landing" className="link primary"></Link>
-            </article>
+          <section id="two" className="spotlights">
+            <section>
+              <img className="image" src={pic21} alt="" />
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Hardlopen en moet je leren</h3>
+                  </header>
+                  <p>
+                    Een goede looptechniek draagt zorg voor een gezond lichaam
+                    en verminderd de kans op blessures. Daarom <i>leer</i> je
+                    bij VitaSupport om hard te lopen. Bij VitaSupport wordt je
+                    niet alleen de juiste looptechniek aangeleerd, maar wordt
+                    ook aandacht besteed aan spierkracht en je ‘core stability’.
+                    De ‘core stability’ of kernstabiliteit zorgt voor een goede
+                    houding, waardoor je prestaties verbeteren en je minder
+                    blessuregevoelig bent. Hierdoor krijg je meer plezier in
+                    hardlopen en verbeteren je loopprestaties.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <img className="image" src={pic21} alt="" />
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Small group training</h3>
+                  </header>
+                  <p>
+                    Bij VitaSupport wordt in kleine groepjes hardgelopen.
+                    Groepjes van gelijkwaardig niveau, zodat iedere deelnemer op
+                    zijn of haar niveau kan instromen. Van beginner tot
+                    (ver)gevorderd.
+                  </p>
+                  <p>
+                    Ben je er niet zeker van of je tempo’s in de groep aan kunt,
+                    of heb je een voorkeur voor individuele hardloopbegeleiding,
+                    dan kan je ook privé sessies afspreken voor één-op-één
+                    begeleiding.
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section>
+              <img className="image" src={pic21} alt="" />
+              <div className="content">
+                <div className="inner">
+                  <header className="major">
+                    <h3>Hardlopen in Alkmaar</h3>
+                  </header>
+                  <p>
+                    De hardlooptrainingen vinden plaats op diverse
+                    buitenlocaties in het zuidelijk deel van Alkmaar. Op
+                    plaatsen zonder veel last van verkeer, zodat de focus gelegd
+                    kan worden op looptechniek, training en voor het hebben van
+                    plezier in het hardlopen.
+                  </p>
+                  <p>
+                    Meld je nu aan en maak kennis met VitaSupport, de start van
+                    een gezond en fit leven.
+                  </p>
+                  <ul className="actions">
+                    <li>
+                      <Link to="/personal-training" className="button">
+                        Aanmeld button (welke url?)
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </section>
         </div>
       </Layout>
