@@ -46,6 +46,7 @@ export default function ContactPage() {
               action="/bedankt/"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              data-netlify-recaptcha="true"
               onSubmit={handleSubmit}
             >
               {/* You still need to add the hidden input with the form name to your JSX form */}
