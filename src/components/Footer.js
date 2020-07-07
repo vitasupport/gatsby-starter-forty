@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { GoogleMaps } from './GoogleMaps'
 
 const Footer = props => (
   <footer id="footer">
@@ -7,6 +8,9 @@ const Footer = props => (
       <div className="grid-wrapper">
         <div className="col-4">
           <p>Adresgegevens?</p>
+          <p>
+            <GoogleMaps />
+          </p>
         </div>
         <div className="col-4">
           <ul className="alt links">

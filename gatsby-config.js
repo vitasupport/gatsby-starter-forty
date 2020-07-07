@@ -1,10 +1,33 @@
+const activeEnv =
+  process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || 'development'
+
+require('dotenv').config({
+  path: `.env.${activeEnv}`,
+})
+
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    title: 'Gatsby Starter - Forty V2',
+    author: 'Hunter Chang',
+    description: 'A Gatsby.js V2 Starter based on Forty by HTML5 UP',
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
+      },
+    },
+    {
+      resolve: '@ccalamos/gatsby-source-googlemaps-static',
+      options: {
+        key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
+        center: '41.8781,-87.6298',
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -19,6 +42,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }
