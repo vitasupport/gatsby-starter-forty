@@ -58,7 +58,7 @@ const HomeIndex = props => (
               <ul className="actions">
                 <li>
                   <Link to="/personal-training" className="button">
-                    Lees verder...
+                    Lees verder &gt;
                   </Link>
                 </li>
                 <li>
@@ -87,7 +87,7 @@ const HomeIndex = props => (
               <ul className="actions">
                 <li>
                   <Link to="/hardlopen" className="button">
-                    Lees verder...
+                    Lees verder &gt;
                   </Link>
                 </li>
                 <li>
