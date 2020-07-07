@@ -58,12 +58,12 @@ const HomeIndex = props => (
               <ul className="actions">
                 <li>
                   <Link to="/personal-training" className="button">
-                    Lees meer over personal training
+                    Lees verder...
                   </Link>
                 </li>
                 <li>
-                  <Link to="/personal-training" className="button">
-                    afsparaak maken (welke url?)
+                  <Link to="/aanmelden" className="button">
+                    Aanmelden
                   </Link>
                 </li>
               </ul>
@@ -87,12 +87,12 @@ const HomeIndex = props => (
               <ul className="actions">
                 <li>
                   <Link to="/hardlopen" className="button">
-                    lees meer over hardloop training
+                    Lees verder...
                   </Link>
                 </li>
                 <li>
-                  <Link to="/hardlopen" className="button">
-                    aanmelden (welke url?)
+                  <Link to="/aanmelden" className="button">
+                    Aanmelden
                   </Link>
                 </li>
               </ul>
@@ -115,8 +115,8 @@ const HomeIndex = props => (
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/personal-training" className="button">
-                    aanmeld button voor bootcamp (welke url?)
+                  <Link to="/aanmelden" className="button">
+                    Aanmelden
                   </Link>
                 </li>
               </ul>
