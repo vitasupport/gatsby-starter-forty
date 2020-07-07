@@ -13,9 +13,10 @@ const Footer = props => (
             <br />
             1812 PS Alkmaar
             <br />
-            T: 06 22445302
+            T: <a href="tel:0622445302">0622445302</a>
             <br />
-            E: <Link to="/contact">contact</Link>
+            E:{' '}
+            <a href="mailto:winfred@vitasupport.nl">winfred@vitasupport.nl</a>
           </p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2422.323597073319!2d4.7611640156370125!3d52.61799613671469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf563020ec9807%3A0xd5e7f25e368e844!2sVitaSupport!5e0!3m2!1snl!2snl!4v1594130711193!5m2!1snl!2snl"
