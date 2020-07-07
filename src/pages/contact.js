@@ -54,7 +54,7 @@ export default class ContactPage extends React.Component {
               <form
                 name="contact"
                 method="post"
-                action="/bedankt/"
+                action="/bedankt-bericht/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
