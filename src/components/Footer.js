@@ -6,11 +6,15 @@ const Footer = props => (
     <div className="inner">
       <div className="grid-wrapper">
         <div className="col-4">
-          <p>VitaSupport</p>
-          <p>Koelmalaan 330</p>
-          <p>1812 PS Alkmaar</p>
-          <p>T: 06 22445302</p>
           <p>
+            VitaSupport
+            <br />
+            Koelmalaan 330
+            <br />
+            1812 PS Alkmaar
+            <br />
+            T: 06 22445302
+            <br />
             E: <Link to="/contact">contact</Link>
           </p>
           <iframe
