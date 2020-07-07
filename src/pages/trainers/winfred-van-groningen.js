@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 
 import pic11 from '../../assets/images/pic11.jpg'
 
-const PersonalTrainingPage = props => (
+const TrainerWinfredPage = props => (
   <Layout>
     <Helmet>
       <title>Winfred van Groningen | VitaSupport</title>
@@ -60,4 +60,4 @@ const PersonalTrainingPage = props => (
   </Layout>
 )
 
-export default PersonalTrainingPage
+export default TrainerWinfredPage

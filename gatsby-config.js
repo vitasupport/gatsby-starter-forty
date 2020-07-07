@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Forty V2",
-    author: "Hunter Chang",
-    description: "A Gatsby.js V2 Starter based on Forty by HTML5 UP"
+    title: 'VitaSupport',
+    description: 'Bla bla bla',
+    siteUrl: `https://www.vitasupport.nl`,
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
@@ -19,6 +20,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    'gatsby-plugin-offline'
+    'gatsby-plugin-offline',
   ],
 }

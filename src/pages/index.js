@@ -62,8 +62,8 @@ const HomeIndex = props => (
                   </Link>
                 </li>
                 <li>
-                  <Link to="/aanmelden" className="button">
-                    Aanmelden
+                  <Link to="/contact" className="button">
+                    Neem contact op!
                   </Link>
                 </li>
               </ul>
@@ -91,8 +91,8 @@ const HomeIndex = props => (
                   </Link>
                 </li>
                 <li>
-                  <Link to="/aanmelden" className="button">
-                    Aanmelden
+                  <Link to="/contact" className="button">
+                    Neem contact op!
                   </Link>
                 </li>
               </ul>
@@ -115,8 +115,8 @@ const HomeIndex = props => (
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/aanmelden" className="button">
-                    Aanmelden
+                  <Link to="/contact" className="button">
+                    Neem contact op!
                   </Link>
                 </li>
               </ul>

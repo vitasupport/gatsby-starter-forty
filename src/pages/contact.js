@@ -54,7 +54,7 @@ export default class ContactPage extends React.Component {
               <form
                 name="contact"
                 method="post"
-                action="/bedankt-bericht/"
+                action="/bedankt/"
                 data-netlify="true"
                 data-netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
@@ -88,16 +88,7 @@ export default class ContactPage extends React.Component {
                   />
                 </div>
                 <div className="field">
-                  <label htmlFor="phonenumber">Telefoonnummer</label>
-                  <input
-                    type="text"
-                    name="phonenumber"
-                    id="phonenumber"
-                    onChange={this.handleChange}
-                  />
-                </div>
-                <div className="field">
-                  <label htmlFor="message">Bericht</label>
+                  <label htmlFor="message">Bericht (optioneel)</label>
                   <textarea
                     name="message"
                     id="message"
@@ -114,7 +105,7 @@ export default class ContactPage extends React.Component {
                   <li>
                     <input
                       type="submit"
-                      value="Verstuur bericht"
+                      value="Verstuur gegevens"
                       className="special"
                     />
                   </li>

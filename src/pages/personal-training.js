@@ -63,8 +63,8 @@ const PersonalTrainingPage = props => (
           </p>
           <ul className="actions">
             <li>
-              <Link to="/personal-training" className="button">
-                Afspraak button (welke url?)
+              <Link to="/contact" className="button">
+                Neem contact op!
               </Link>
             </li>
           </ul>
