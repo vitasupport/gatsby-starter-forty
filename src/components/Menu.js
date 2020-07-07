@@ -31,11 +31,6 @@ const Menu = props => (
             Contact
           </Link>
         </li>
-        <li>
-          <Link onClick={props.onToggleMenu} to="/aanmelden">
-            Aanmelden
-          </Link>
-        </li>
       </ul>
     </div>
     <a className="close" onClick={props.onToggleMenu} href="javascript:;">
