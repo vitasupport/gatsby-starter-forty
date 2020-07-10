@@ -6,6 +6,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-172339886-1',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
