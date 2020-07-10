@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'sansationlight';
+  src: url('fonts/Sansation-Light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sansationbold';
+  src: url('fonts/Sansation-Bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

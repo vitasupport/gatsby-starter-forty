@@ -5,6 +5,15 @@ module.exports = {
     siteUrl: `https://www.vitasupport.nl`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['sansationlight', 'sansationbold'],
+          urls: ['/fonts.css'],
+        },
+      },
+    },
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-react-helmet',
     {
