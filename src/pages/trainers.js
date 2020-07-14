@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
+
 import Layout from '../components/Layout'
 
-import pic08 from '../assets/images/pic08.jpg'
-import pic09 from '../assets/images/pic09.jpg'
-
-const TrainersPage = props => (
+export default ({ data }) => (
   <Layout>
     <Helmet>
       <title>Trainers | VitaSupport</title>
@@ -33,7 +32,7 @@ const TrainersPage = props => (
       <section id="two" className="spotlights">
         <section>
           <Link to="/trainers/winfred-van-groningen" className="image">
-            <img src={pic08} alt="" />
+            <Img fluid={data.VitaSupport5.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -59,7 +58,7 @@ const TrainersPage = props => (
         </section>
         <section>
           <Link to="/hardlopen" className="image">
-            <img src={pic09} alt="" />
+            <Img fluid={data.VitaSupport5.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -88,4 +87,14 @@ const TrainersPage = props => (
   </Layout>
 )
 
-export default TrainersPage
+export const query = graphql`
+  query {
+    VitaSupport5: file(relativePath: { eq: "VitaSupport-5.jpg" }) {
+      childImageSharp {
+        fluid(maxHeight: 640) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

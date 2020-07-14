@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
+
 import Layout from '../components/Layout'
 import BannerLanding from '../components/BannerLanding'
 
-import pic20 from '../assets/images/pic20.jpg'
-import pic21 from '../assets/images/pic21.jpg'
-
-const HomeIndex = props => (
+export default ({ data }) => (
   <Layout>
     <Helmet
       title="Personal Trainer en hardloop training in Alkmaar | VitaSupport"
@@ -43,7 +42,7 @@ const HomeIndex = props => (
       <section id="two" className="spotlights">
         <section>
           <Link to="/personal-training" className="image">
-            <img src={pic21} alt="" />
+            <Img fluid={data.VitaSupport3.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -72,7 +71,7 @@ const HomeIndex = props => (
         </section>
         <section>
           <Link to="/hardlopen" className="image">
-            <img src={pic20} alt="" />
+            <Img fluid={data.VitaSupport3.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -101,7 +100,7 @@ const HomeIndex = props => (
         </section>
         <section>
           <Link to="/personal-training" className="image">
-            <img src={pic21} alt="" />
+            <Img fluid={data.VitaSupport3.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -128,4 +127,14 @@ const HomeIndex = props => (
   </Layout>
 )
 
-export default HomeIndex
+export const query = graphql`
+  query {
+    VitaSupport3: file(relativePath: { eq: "VitaSupport-3.jpg" }) {
+      childImageSharp {
+        fluid(maxHeight: 640) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

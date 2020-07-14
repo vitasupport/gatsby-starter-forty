@@ -7,7 +7,11 @@ export default () => (
       <section id="one">
         <div className="inner">
           <header className="major">
-            <h1>Bedankt voor je bericht!</h1>
+            <h1>
+              Bedankt voor je bericht!
+              <br />
+              Ik neem spoedig contact met je op.
+            </h1>
           </header>
         </div>
       </section>

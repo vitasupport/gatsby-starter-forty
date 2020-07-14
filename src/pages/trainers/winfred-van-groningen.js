@@ -1,10 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import Layout from '../../components/Layout'
 
-import pic11 from '../../assets/images/pic11.jpg'
-
-const TrainerWinfredPage = props => (
+export default ({ data }) => (
   <Layout>
     <Helmet>
       <title>Winfred van Groningen | VitaSupport</title>
@@ -19,7 +20,7 @@ const TrainerWinfredPage = props => (
             <h2>Personal trainer, hardloop- & voedingspecialist</h2>
           </header>
           <span className="image main">
-            <img src={pic11} alt="" />
+            <Img fluid={data.VitaSupport9.childImageSharp.fluid} />
           </span>
           <p>
             Als founder van VitaSupport in 2013 kan ik als specialist bogen op
@@ -60,4 +61,14 @@ const TrainerWinfredPage = props => (
   </Layout>
 )
 
-export default TrainerWinfredPage
+export const query = graphql`
+  query {
+    VitaSupport9: file(relativePath: { eq: "VitaSupport-9.jpg" }) {
+      childImageSharp {
+        fluid(maxHeight: 640) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

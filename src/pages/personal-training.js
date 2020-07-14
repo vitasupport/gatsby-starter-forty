@@ -1,11 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+
 import Layout from '../components/Layout'
 
-import pic11 from '../assets/images/pic11.jpg'
-
-const PersonalTrainingPage = props => (
+export default ({ data }) => (
   <Layout>
     <Helmet
       title="Personal Training met personal trainer in Alkmaar | VitaSupport"
@@ -30,7 +30,7 @@ const PersonalTrainingPage = props => (
             <h2>onder begeleiding fit worden en fit blijven</h2>
           </header>
           <span className="image main">
-            <img src={pic11} alt="" />
+            <Img fluid={data.VitaSupport3.childImageSharp.fluid} />
           </span>
           <p>Personal Training bij VitaSupport</p>
           <p>
@@ -74,4 +74,14 @@ const PersonalTrainingPage = props => (
   </Layout>
 )
 
-export default PersonalTrainingPage
+export const query = graphql`
+  query {
+    VitaSupport3: file(relativePath: { eq: "VitaSupport-3.jpg" }) {
+      childImageSharp {
+        fluid(maxHeight: 640) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`

@@ -1,5 +1,7 @@
 import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import Img from 'gatsby-image'
 import { navigateTo } from 'gatsby-link'
 import Recaptcha from 'react-google-recaptcha'
 import Layout from '../components/Layout'
@@ -12,7 +14,7 @@ function encode(data) {
     .join('&')
 }
 
-export default class ContactPage extends React.Component {
+class ContactPage extends React.Component {
   constructor(props) {
     super(props)
     this.state = {}
@@ -51,6 +53,9 @@ export default class ContactPage extends React.Component {
               <header className="major">
                 <h1>Contact</h1>
               </header>
+              <Img
+                fluid={this.props.data.VitaSupport1a.childImageSharp.fluid}
+              />
               <form
                 name="contact"
                 method="post"
@@ -121,3 +126,20 @@ export default class ContactPage extends React.Component {
     )
   }
 }
+
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query {
+        VitaSupport1a: file(relativePath: { eq: "VitaSupport-1a.jpg" }) {
+          childImageSharp {
+            fluid(maxHeight: 640) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    `}
+    render={data => <ContactPage data={data} />}
+  />
+)
